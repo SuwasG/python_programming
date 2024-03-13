@@ -150,8 +150,8 @@ print("string alignment str11: ", str11)
 
 
 # looping 
-# for char in text:
-#     print(char)
+for char in text:
+    print(char)
 
 
 # Assignment for later:
