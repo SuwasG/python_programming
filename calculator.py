@@ -1,5 +1,3 @@
-
-
 def add(num1, num2):
     return num1+ num2
 
@@ -10,8 +8,8 @@ def multiply(num1, num2):
     return num1* num2
 
 def divide(num1, num2):
-    if num1 == 0 :
-        print("zero can not be divided .")
+    if num2 == 0 :
+        print("can not be divided by zero .")
         quit()
     else:
         return num1/num2
