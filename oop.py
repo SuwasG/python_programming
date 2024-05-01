@@ -4,10 +4,10 @@
 -> In the programming, the main concept of OOPs is to bind the data and the functions that work on that together as a single unit so that no other part of the code can access this data.
 
 '''
-# class:
-# classes are created by using keyword 'class'
-# class -> class is the blueprint or template or the prototypes that defines the nature, attribute and methods of the future object.
-# A class is a collection of objects.
+# Class:
+# Classes are created by using keyword 'Class'
+# Class -> Class is the blueprint or template or the prototypes that defines the nature, attribute and methods of the future object.
+# A Class is a collection of objects.
 # Classes encapsulate data for the object and provide methods to operate on that data.
 # They act as a user-defined data type in which we can define our own attributes and methods.
 # Attributes are the variables that belong to a class.
@@ -40,5 +40,5 @@ print(type(puppy))
 class Car:
     pass 
 tesla=Car() # object creation from class.
-#NOTE: The process of creating an object from a class is called instantiation. This involves allocating memory for the object and initializing its attributes
+#NOTE: The process of creating an object from a class is called instantiation. This involves allocating memory for the object and initializing its attributes.
 print(type(tesla))
