@@ -24,5 +24,5 @@ print('x=',x.a)
 # print('x= ',x.b)
 
 print('x=', x._c)
-
+# print('x= ', x.__b) 
 x.display()
