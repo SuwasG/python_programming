@@ -1,6 +1,6 @@
 # simple method with conditional statements only.
 year = input("Enter the year: ") 
-if year.isdigit():
+if year.isnumeric():
     year = int(year)  
     if year%4==0  and year%100!=0 or year%400==0:
         print(year, "is leap Year")
