@@ -1,4 +1,4 @@
-# list -> it contains colloection of more than one data
+# list -> it contains collection of more than one data
 # python lists are just like dynamically sized arrays, declared in other languages. 
 # it is mutable i.e. element inside list can be changed.
 # and it is ordered, 
