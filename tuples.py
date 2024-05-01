@@ -53,7 +53,7 @@ print("repetition tuple2 for 3 times: ", tuple2*3)
 # len()
 print( "len of tuple2: ",len(tuple2))
 
-# tupple with different data types:
+# tuple with different data types:
 tuple5 = ("suwas", 1,2, True, 3.14)
 print("tuple5: ", tuple5)
 print("type of tuple5: ", type(tuple5))
