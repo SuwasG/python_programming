@@ -1,6 +1,6 @@
 # Python inbuilt datatypes:
 # Datatypes are the classification or categorization of data items.
-# Datatype represents the kind of valu that tells what operations can be performed on a particular data.
+# Datatype represents the kind of value that tells what operations can be performed on a particular data.
 # NOTE: Since everything is an OBJECT in Python programming, data types are classes and variables are instances(objects) of these classes.
 # To define the value of various data types and check their data types, we use the type() function.
 
