@@ -119,7 +119,7 @@ print("sum of first 10 numbers is: ", sum)
 
 while True:
     userInput = input("Enter a number for which to create a table: ")
-    if userInput.isdigit():
+    if userInput.isnumeric():
         num = int(userInput)
         for i in range(1, 11):
             print(f"{num} X {i} = {num*i}")
