@@ -3,7 +3,7 @@
 # it is mutable i.e. element inside list can be changed.
 # and it is ordered, 
 # allow duplicates
-# A list is a colllection of thigs, enclosed in [] and separated by commas.
+# A list is a colllection of things, enclosed in [] and separated by commas.
 
 fruits = ['apple', 'banana', 'cherry', 'grapes','apple', 'mango', 'strawberry']
 print(fruits)
