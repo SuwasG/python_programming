@@ -51,7 +51,6 @@ print('set_x before clearing: ', set_x)
 set_x.clear()
 print('set_x after clearing: ', set_x)
 
-
 x = {1, 2, 3, 4, 5, 6}
 y = {2, 3, 4}
 print(x.issuperset(y)) # issuperset() -> returns whether this set contains another set or not.
