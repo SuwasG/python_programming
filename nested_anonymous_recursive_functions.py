@@ -79,6 +79,21 @@ def fibonacci(num, memo={}):
 print(fibonacci(10))
 
 
+
+def generate_fibonacci(limit):
+    fib_sequence = [0, 1]
+    while True:
+        next_num = fib_sequence[-1] + fib_sequence[-2]
+        if next_num > limit:
+            break
+        fib_sequence.append(next_num)
+    return fib_sequence
+
+limit = int(input("Enter the limit for Fibonacci numbers: "))
+fibonacci_numbers = generate_fibonacci(limit)
+print("Fibonacci numbers up to", limit, "are:", fibonacci_numbers)
+
+
 # Tower Of Hanoi using recursive function
 '''
 Rules: 
