@@ -108,3 +108,8 @@ def hello(name, address):
 hello("Suwas", 'Rasuwa')
 print(hello.__doc__)
 print(hello.__name__)
+
+
+import math 
+print("math.sqrt= ", int(math.sqrt(11))+1)
+print(int(11*0.5)+1)
