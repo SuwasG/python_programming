@@ -26,6 +26,13 @@ class Library:
             if book.title == title:
                 return book 
         return None 
+
+    def find_book_by_author(self, author):
+        author_books=[]
+        for book in self.books:
+            if book.author== author:
+                author_books.append(book) 
+        return author_books
     
     def book_details(self, title):
         book=self.find_book(title)
@@ -37,6 +44,17 @@ class Library:
             print(f"Availability: {'Available' if book.available else 'Borrowed'}")
         else:
             print("Book not found.")
+    
+    def update_book_details(self, title, new_author=None, new_isbn=None):
+        book=self.find_book(title)
+        if book:
+            if new_author:
+                book.author=new_author
+            if new_isbn:
+                book.isbn=new_isbn
+            print(f"Details updated for book '{book.title}'.")
+        else:
+            return None
         
     def borrow_book(self, title):
         book = self.find_book(title)
@@ -58,7 +76,7 @@ library = Library()
 
 book1 = Book("Python Programming", "Suwas Ghale", "123456789")
 book2 = Book("Machine Learning", "Suwas Lama", "987654321")
-book3 = Book("Cyber Security", "Suwas Don", "987654321")
+book3 = Book("Cyber Security", "Suwas Ghale", "987654321")
 
 library.add_book(book1)
 library.add_book(book2)
@@ -90,7 +108,7 @@ returned_book = library.return_book("Machine Learning")
 if returned_book:
     print(f"{returned_book.title} is returned.")
 else:
-    print("Book not found.")
+    print("Book not found to return, may be it was not borrowed.")
 
 returned_book2 = library.return_book("Python Programming")
 if returned_book2:
@@ -99,3 +117,18 @@ else:
     print("Book not found.")
 
 
+# find book by author
+suwasg_books=library.find_book_by_author("Suwas Ghale")
+print("Suwas Ghale's books are: ")
+for book in suwasg_books:
+    print(book.title)
+
+# book details befor updating
+library.book_details('Python Programming')
+
+# update book
+library.update_book_details("Python Programming", new_author="John Cena")
+library.update_book_details("Python Programming", new_isbn="987654321")
+
+# book details after updating
+library.book_details('Python Programming')
