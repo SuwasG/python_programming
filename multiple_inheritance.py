@@ -1,0 +1,35 @@
+class Character:
+    def __init__(self, name):
+        self.name = name
+
+    def introduce(self):
+        print(f"Hello, my name is {self.name}.")
+
+class Race:
+    def __init__(self, race_name):
+        self.race_name = race_name
+
+    def racial_ability(self):
+        print(f"I have a racial ability as a {self.race_name}.")
+
+class Class:
+    def __init__(self, class_name):
+        self.class_name = class_name
+
+    def class_ability(self):
+        print(f"I have a class-specific ability as a {self.class_name}.")
+
+class Player(Character, Race, Class):
+    def __init__(self, name, race_name, class_name):
+        Character.__init__(self, name)
+        Race.__init__(self, race_name)
+        Class.__init__(self, class_name)
+
+    def show_info(self):
+        self.introduce()
+        self.racial_ability()
+        self.class_ability()
+
+# Example usage:
+player1 = Player("Gandalf", "Elf", "Wizard")
+player1.show_info()
