@@ -33,3 +33,35 @@ class Player(Character, Race, Class):
 # Example usage:
 player1 = Player("Gandalf", "Elf", "Wizard")
 player1.show_info()
+
+
+# example-2
+print("--------------example-2------------------")
+class Department:
+    def __init__(self, department_name):
+        self.department_name = department_name
+
+    def department_info(self):
+        print(f"This course belongs to the {self.department_name} department.")
+
+class Course:
+    def __init__(self, course_name):
+        self.course_name = course_name
+
+    def course_info(self):
+        print(f"Welcome to {self.course_name}!")
+
+class Enroll(Department, Course):
+    def __init__(self, student_name, course_name, department_name):
+        self.student_name = student_name
+        Department.__init__(self, department_name)
+        Course.__init__(self, course_name)
+
+    def enroll_info(self):
+        print(f"{self.student_name} has enrolled in {self.course_name}.")
+        self.department_info()
+        self.course_info()
+
+# Example usage:
+enrollment = Enroll("Alice", "Introduction to Python", "Computer Science")
+enrollment.enroll_info()
